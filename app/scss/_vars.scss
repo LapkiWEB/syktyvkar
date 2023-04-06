@@ -1,25 +1,43 @@
-// %AnPro-Regular {
-//   font-family: 'AnonymousPro-Regular', sans-serif;
-//   font-weight: normal;
-//   display: swap;
-// }
+%Monst-SemiBold {
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: swap;
+}
 
-// %AnPro-Bold {
-//   font-family: 'AnonymousPro-Bold', sans-serif;
-//   font-weight: 700
-// }
+%Monst-Bold {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: swap;
+}
 
-// %AlGrey-Bold {
-//   font-family: 'AlegreyaSC-Bold', sans-serif;
-//   font-weight: 700;
-// }
+%Monst-Medium {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: swap;
+}
 
-// %AlGrey-Regular {
-//   font-family: 'AlegreyaSC-Regular', sans-serif;
-//   font-weight: normal;
-// }
+%Monst-Regular {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: swap;
+}
 
-// $blue: #ABD0D3;
-// $text: #F2F1ED;
-// $background: #3B3B3B;
-// $line: #BCB3A9;
+
+
+
+
+
+$green: #018635;
+$blue: #0039aa;
+$text: #FFFFFF;
+$background: #2F2F2F;
+$black: #363636;
+
+
+// @mixin form-style--btn {
+//   background: linear-gradient(170deg, #0039AA 0%, #018635 100%);
+// }

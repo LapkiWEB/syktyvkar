@@ -1,40 +1,111 @@
 html,
 body {
-    height: 100%;
-        //   @extend %AnPro-Regular;
-        //   color: $text;
-        // position: relative;
-        // overflow-x: hidden;
-        // margin: 0 auto;
-        //   background-color: $background;
+  height: 100%;
+  @extend %Monst-Regular;
+  color: $text;
+  // position: relative;
+  // overflow-x: hidden;
+  // margin: 0 auto;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: $background;
 }
+
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
-    flex: 0 0 auto;
-}
-.container{
-  // max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  flex: 0 0 auto;
 }
 
-// .title{
-//     @extend %AlGrey-Bold;
-//     font-size: 36px;
-//     line-height: 49px;
-//     padding: 0px 35px;
-//     border-bottom: 2px solid $blue;
-//     text-align: center;
-//     margin: 0 auto;
-//     margin-bottom: 56px;
-//     max-width: fit-content;
-// }
+.container {
+  max-width: 1790px;
+  margin: 0 auto;
+  padding: 0 130px;
+}
+
+.title {
+  @extend %Monst-Medium;
+  font-size: 48px;
+  line-height: 58px;
+  padding: 0 15px;
+  max-width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  color: $text;
+
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.global__btn {
+  padding: 15px 30px;
+  @extend %Monst-SemiBold;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 5px;
+}
+
+
+// Старт кнопка с иконкой телефона 2 класса
+.global__btn-phone {
+  padding: 1px;
+  @extend %Monst-SemiBold;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 5px;
+  background: linear-gradient(170deg, #0039AA 0%, #018635 100%);
+}
+
+.global__border-box {
+  background-color: $background;
+  padding: 15px 30px 15px 60px;
+  border-radius: 5px;
+  position: relative;
+  @extend %Monst-SemiBold;
+  font-size: 16px;
+  line-height: 19px;
+  box-shadow: -5px -5px 10px #0039AA,
+    5px 5px 10px #018635;
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: -10px -10px 10px #0039AA,
+      10px 10px 10px #018635;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    background-image: url('../images/icons/phone.png');
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// Финиш кнопка с иконкой телефона 2 класса
+
+.global__btn-white {
+  background-color: $text;
+  border: 1px solid $blue;
+  color: $black;
+  transition: all .5s;
+  &:hover {
+    box-shadow: -5px -5px 10px #0039AA,
+    5px 5px 10px #018635;
+      background-color: $background;
+      color: $text;
+  }
+}

@@ -4,7 +4,157 @@
 @import 'fonts';
 
 // start header
+.header {
+  padding: 15px 0;
+  z-index: 100;
+  position: relative;
+}
 
+.menu__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__item-list {
+  @extend %Monst-Regular;
+  color: $text;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+transition: all .3s;
+  &+.menu__item-list {
+    margin-left: 60px;
+  }
+  &:hover{
+     text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+}
+
+.menu__social {
+  display: flex;
+  align-items: center;
+}
+
+.social__list {
+  padding-top: 3px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  transition: all .3s;
+  &+.social__list {
+    margin-left: 30px;
+  }
+}
+
+.header__btn {
+  margin-left: 60px;
+}
+
+.menu__btn {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+  background-color: $text;
+  padding-top: 4px !important;
+  border-radius: 5px;
+  border: 1px solid $blue;
+  &.active {
+    .row {
+      height: 3px;
+    }
+    .row1 {
+      transform: rotate(45deg);
+      position: relative;
+      top: 8px;
+      background-color: $black;
+      transition: all .5s ease 0s;
+    }
+    .row2 {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -1px;
+      background-color: $black;
+      transition: all .5s ease 0s;
+    }
+    .row3 {
+      opacity: 0;
+    }
+  }
+}
+
+.row {
+  width: 30px;
+  background-color: $black;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  transition: all .3s;
+  margin: 6px auto;
+}
+
+.mob__social{
+  display: none;
+}
 // end header
 
+
+// start section screen
+.screen {
+  display: flex;
+  margin-top: -81px;
+  height: 950px;
+}
+
+.screen__body {
+  position: relative;
+  z-index: 10;
+  width: 45%;
+}
+.screen__title {
+  padding-top: 226px;
+  @extend %Monst-Bold;
+  font-size: 110px;
+  line-height: 110px;
+  margin-bottom: 68px;
+  span {
+    @extend %Monst-Medium;
+    font-size: 80px;
+  }
+}
+.screen__text{
+  @extend %Monst-Regular;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 55px;
+}
+.screen__content {
+  flex: 0 0 100%
+}
+
+.screen__img {
+  max-width: 100%;
+  flex: 0 0 55%;
+  transform: translate(-100%, 0px);
+  clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+
+
+// end section screen
 @import 'media';

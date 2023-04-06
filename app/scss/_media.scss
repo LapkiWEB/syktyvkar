@@ -1,3 +1,294 @@
-// @media(max-width: 1900px){
+@media(max-width: 1600px) {
+  .header__btn {
+    margin-left: 30px;
+  }
 
-// }
+  .screen {
+    height: 720px;
+  }
+
+  .screen__title {
+    padding-top: 170px;
+  }
+}
+
+@media(max-width: 1500px) {
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .screen__title {
+    font-size: 100px;
+    line-height: 95px;
+
+    span {
+      font-size: 70px;
+    }
+  }
+
+  .menu__btn {
+    display: block;
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+
+    &.active {
+      position: fixed;
+      top: 0px;
+      right: 0;
+      width: 100%;
+      bottom: 0;
+      background: rgba(54, 54, 54, 0.98);
+      display: flex;
+    }
+  }
+
+  .menu__inner {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .menu__item-list {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 100%;
+
+    &+.menu__item-list {
+      margin-left: 0;
+    }
+  }
+
+  .menu__social {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mob__social {
+    display: block;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
+@media(max-width: 1400px) {
+  .screen__body {
+    width: 50%;
+  }
+
+  .screen__img {
+    flex: 0 0 50%;
+  }
+
+  .screen__title {
+    font-size: 80px;
+    line-height: 70px;
+    margin-bottom: 40px;
+
+    span {
+      font-size: 60px;
+    }
+  }
+
+  .screen {
+    height: 650px;
+  }
+
+  .screen__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .container {
+    padding: 0 100px;
+  }
+
+  .global__btn {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 10px 20px;
+  }
+
+  .global__btn-phone {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .global__border-box {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 10px 20px 10px 50px;
+
+    &::before {
+      top: 10px;
+      left: 15px;
+    }
+  }
+}
+
+@media(max-width: 1100px) {
+  .screen {
+    height: 500px;
+  }
+
+  .screen__title {
+    padding-top: 122px;
+    font-size: 64px;
+    line-height: 70px;
+
+    span {
+      font-size: 45px;
+    }
+  }
+
+  .screen__text {
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 950px) {
+  .container {
+    padding: 0 70px;
+  }
+
+  .screen {
+    height: 440px;
+  }
+
+  .screen__body {
+    width: 50%;
+  }
+
+  .screen__img {
+    flex: 0 0 50% !important;
+  }
+
+  .screen__title {
+    padding-top: 122px;
+    font-size: 55px;
+    line-height: 50px;
+
+    span {
+      font-size: 38px;
+    }
+  }
+
+  .global__btn {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 20px;
+  }
+
+  .global__border-box {
+    padding: 10px 20px 10px 45px;
+
+    &:before {
+      top: 9px;
+      left: 15px;
+    }
+  }
+
+  .screen__img {
+    flex: 0 0 45%;
+  }
+
+  .mob__social {
+    width: 360px;
+  }
+}
+
+@media(max-width: 750px) {
+  .screen {
+    height: 70vh;
+  }
+
+  .screen__title,
+  .screen__text {
+    color: $black;
+    text-align: center;
+  }
+
+  .screen__btn {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+  }
+
+  .screen__body {
+    width: 100%;
+  }
+
+  .screen__content {
+    flex: 0 0 100% !important;
+  }
+
+  .screen__img {
+    flex: 0 0 100% !important;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    img {
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .mob__social {
+    width: fit-content !important;
+    .social {
+      display: none;
+    }
+  }
+  .menu__item{
+    width: 100%;
+  }
+  .menu__social{
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  .social{
+    margin-bottom: 30px;
+  }
+   .header__btn {
+     margin-left: 0;
+   }
+}
+
+@media(max-width: 450px) {
+  .screen__title {
+    font-size: 46px;
+    line-height: 48px;
+    margin-bottom: 20px;
+    span {
+      font-size: 35px;
+    }
+  }
+}
+@media(max-width: 400px) {
+  .container{
+    padding: 0 15px;
+  }
+  .screen__title {
+    font-size: 40px;
+    line-height: 43px;
+    // margin-bottom: 20px;
+
+    span {
+      font-size: 30px;
+    }
+  }
+}
