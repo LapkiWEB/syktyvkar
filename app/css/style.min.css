@@ -5,7 +5,7 @@
   display: swap;
 }
 
-.screen__title {
+.services__left-item--title, .services__right-item--title, .screen__title {
   font-family: "Montserrat-Bold", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -19,7 +19,7 @@
   display: swap;
 }
 
-.screen__text, .menu__item-list, html,
+.services__left-item-text, .services__right-item-text, .screen__text, .menu__item-list, html,
 body {
   font-family: "Montserrat-Regular", sans-serif;
   font-style: normal;
@@ -90,6 +90,8 @@ html,
 body {
   height: 100%;
   color: #FFFFFF;
+  position: relative;
+  overflow-x: hidden;
   font-size: 18px;
   line-height: 21px;
   background-color: #2F2F2F;
@@ -394,6 +396,183 @@ body {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.services__text {
+  margin-bottom: 50px;
+}
+
+.services__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 288px;
+  margin-bottom: 50px;
+}
+
+.services__right-box {
+  position: relative;
+}
+.services__right-box::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.51)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  background-color: #0039aa;
+  margin-left: 99.99999%;
+  display: block;
+}
+
+.services__right-item--info {
+  height: 100%;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.51)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  background-color: #0039aa;
+  width: 100%;
+}
+
+.services__right-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__right-inner {
+  padding: 50px 0 50px 183px;
+}
+
+.services__right-item--title {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+
+.services__right-item-text {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 70px;
+}
+
+.services__btn-phone {
+  margin-left: 50px;
+}
+
+.services__right-img {
+  max-width: 450px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 231px;
+}
+
+.services__left-box {
+  position: relative;
+}
+.services__left-box::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.51)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  background-color: rgb(1, 134, 53);
+  margin-left: -100%;
+  display: block;
+}
+
+.services__left-item--info {
+  height: 100%;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.51)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  background-color: rgb(1, 134, 53);
+  width: 100%;
+}
+
+.services__left-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__left-inner {
+  padding: 50px 183px 50px 0px;
+}
+
+.services__left-item--title {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+
+.services__left-item-text {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 70px;
+}
+
+.services__btn-phone {
+  margin-left: 50px;
+}
+
+.services__left-img {
+  max-width: 450px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 231px;
+}
+
+.services__right-box--white::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  margin-left: 99.99999%;
+  display: block;
+}
+.services__right-box--white .services__right-item--info {
+  height: 100%;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background: #fff;
+  width: 100%;
+}
+
+.services__right-box--white .services__right-item--title {
+  color: #363636;
+}
+.services__right-box--white .services__right-item-text {
+  color: #363636;
 }
 
 @media (max-width: 1600px) {
