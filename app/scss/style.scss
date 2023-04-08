@@ -178,244 +178,125 @@
   align-items: center;
   height: 288px;
   margin-bottom: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-.services__right-box {
   position: relative;
-
   &::after {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
+    display: block;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
-    background-color: $blue;
-    margin-left: 99.99999%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
     display: block;
   }
+}
+
+.services__number-icon {
+  width: 372px;
+  height: 233px;
+}
+
+.services__right-box {
+  &::after {
+    background-color: $blue;
+    margin-left: 99.99999%;
+  }
+
+}
+
+.services__item--info {
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
 }
 
 .services__right-item--info {
-  height: 100%;
   clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
   background-color: $blue;
-  width: 100%;
 }
 
-.services__right-wrapper {
+.services__item-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // align-items: flex-end;
 
 }
 
-
-
-
-
-
-
 .services__right-inner {
-  // padding-left: 183px;
   padding: 50px 0 50px 183px;
 }
 
-.services__right-item--title {
+.services__item--title {
   @extend %Monst-Bold;
   color: $text;
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-.services__right-item-text {
+.services__item-price {
   @extend %Monst-Regular;
   color: $text;
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 70px;
+  display: block;
+  width: 100%;
 }
 
 .services__btn-phone {
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
-.services__right-images {}
-
-.services__right-img {
-  max-width: 450px;
+.services__img {
+  max-width: 449px;
   width: fit-content;
   height: 231px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .services__left-box {
-  position: relative;
-
   &::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
     background-color: $green;
     margin-left: -100%;
-    display: block;
   }
 }
 
-
-
 .services__left-item--info {
-  height: 100%;
-  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
+  clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
   background-color: $green;
-  width: 100%;
-
-}
-
-
-
-
-
-
-
-.services__left-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .services__left-inner {
-  // padding-left: 183px;
   padding: 50px 183px 50px 0px;
 }
-
-.services__left-item--title {
-  @extend %Monst-Bold;
-  color: $text;
-  font-size: 24px;
-  line-height: 29px;
-  margin-bottom: 15px;
-}
-
-.services__left-item-text {
-  @extend %Monst-Regular;
-  color: $text;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 70px;
-}
-
-.services__btn-phone {
-  margin-left: 50px;
-}
-
-.services__left-images {}
-
-.services__left-img {
-  max-width: 450px;
-  width: fit-content;
-  height: 231px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 .services__right-box--white {
   &::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    margin-left: 99.99999%;
-    display: block;
+    background: $text;
+    // margin-left: 99.99999%;
   }
 
   .services__right-item--info {
-    height: 100%;
-    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-    background: #fff;
-    width: 100%;
-
+    background: $text;
   }
 }
 
 .services__right-box--white {
-  .services__right-item--title {
-    color: $black;
-  }
 
-  .services__right-item-text {
+  .services__item--title,
+  .services__item-price {
     color: $black;
   }
 }
