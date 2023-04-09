@@ -244,6 +244,10 @@
   .services__btn-phone {
     margin-left: 30px;
   }
+  .advantages__item{
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media(max-width: 950px) {
@@ -441,6 +445,13 @@
 
   .services__text {
     margin-bottom: 30px;
+  }
+  .advantages__inner {
+    flex-wrap: wrap;
+  }
+  .advantages__item{
+    margin-bottom: 30px;
+    width: 270px;
   }
 }
 

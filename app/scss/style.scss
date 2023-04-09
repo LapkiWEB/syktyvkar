@@ -7,7 +7,7 @@
 .header {
   padding: 15px 0;
   z-index: 100;
-position: relative;
+  position: relative;
 }
 
 .header__fixed {
@@ -26,6 +26,7 @@ position: relative;
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, #0039aa, #018635) 47% 0%;
 }
+
 @keyframes show_header {
   0% {
     opacity: 0;
@@ -148,9 +149,11 @@ position: relative;
   margin-top: -81px;
   height: 950px;
 }
-.screen-active{
-    margin-top: 0px;
+
+.screen-active {
+  margin-top: 0px;
 }
+
 .screen__body {
   position: relative;
   z-index: 10;
@@ -201,13 +204,15 @@ position: relative;
 // end section screen
 
 // start secion services
-.services{
+.services {
   position: relative;
   overflow: hidden;
 }
-.services.section{
+
+.services.section {
   padding-bottom: 0;
 }
+
 .services__text {
   margin-bottom: 50px;
 }
@@ -218,6 +223,7 @@ position: relative;
   height: 288px;
   margin-bottom: 50px;
   position: relative;
+
   &::after {
     content: '';
     position: absolute;
@@ -344,31 +350,67 @@ position: relative;
 
 
 // start section work
-.work__box{
+.work__box {
   margin-bottom: 50px;
 }
-.work__inner{
+
+.work__inner {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   border-bottom: 1px dashed $blue;
   align-items: flex-end;
 }
-.work__item-text{
+
+.work__item-text {
   max-width: 470px;
   width: 100%;
   padding-right: 20px;
 }
-.work__item-price{
+
+.work__item-price {
   width: 150px;
   text-align: right;
-  // padding-left: 20px;
 }
-.work__btn{
+
+.work__btn {
   width: fit-content;
   display: block;
   margin: 0 auto;
 }
 
 // end section work
+
+// start section adv
+
+.advantages__text {
+  margin-bottom: 50px;
+
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages__item {
+  clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+  padding: 10px;
+  width: 370px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+}
+.advantages__item-blue{
+  background-color: $blue;
+}
+.advantages__item-green{
+  background-color: $green;
+}
+.advantages__item-white{
+  background-color: $text;
+  color: $black;
+}
+// end section adv
 @import 'media';
