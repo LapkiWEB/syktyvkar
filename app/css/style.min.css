@@ -1,4 +1,4 @@
-.global__border-box, .global__btn-phone, .global__btn {
+.advantages__item, .global__border-box, .global__btn-phone, .global__btn {
   font-family: "Montserrat-SemiBold", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -188,7 +188,7 @@ body {
 
 .global__btn-white {
   background-color: #FFFFFF;
-  border: 1px solid #0039aa;
+  border: 1px solid rgb(0, 57, 170);
   color: #363636;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -332,7 +332,7 @@ body {
   background-color: #FFFFFF;
   padding-top: 4px !important;
   border-radius: 5px;
-  border: 1px solid #0039aa;
+  border: 1px solid rgb(0, 57, 170);
 }
 .menu__btn.active .row {
   height: 3px;
@@ -491,7 +491,7 @@ body {
 }
 
 .services__right-box::after {
-  background-color: #0039aa;
+  background-color: rgb(0, 57, 170);
   margin-left: 99.99999%;
 }
 
@@ -506,7 +506,7 @@ body {
 .services__right-item--info {
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-  background-color: #0039aa;
+  background-color: rgb(0, 57, 170);
 }
 
 .services__item-wrapper {
@@ -555,14 +555,14 @@ body {
 }
 
 .services__left-box::after {
-  background-color: #018635;
+  background-color: rgb(1, 134, 53);
   margin-left: -100%;
 }
 
 .services__left-item--info {
   -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
-  background-color: #018635;
+  background-color: rgb(1, 134, 53);
 }
 
 .services__left-inner {
@@ -593,7 +593,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 20px;
-  border-bottom: 1px dashed #0039aa;
+  border-bottom: 1px dashed rgb(0, 57, 170);
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -643,16 +643,97 @@ body {
 }
 
 .advantages__item-blue {
-  background-color: #0039aa;
+  background-color: rgb(0, 57, 170);
 }
 
 .advantages__item-green {
-  background-color: #018635;
+  background-color: rgb(1, 134, 53);
 }
 
 .advantages__item-white {
   background-color: #FFFFFF;
   color: #363636;
+}
+
+.questions__item {
+  border: 2px solid transparent;
+  -o-border-image: -o-linear-gradient(left top, rgb(0, 57, 170), rgb(1, 134, 53));
+     border-image: -webkit-gradient(linear, left top, right bottom, from(rgb(0, 57, 170)), to(rgb(1, 134, 53)));
+     border-image: linear-gradient(to right bottom, rgb(0, 57, 170), rgb(1, 134, 53));
+  border-image-slice: 1;
+  max-width: 1144px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.questions__item--active .questions__item-bottom {
+  display: block;
+}
+
+.questions__inner {
+  background-color: #2f2f2f;
+  padding: 20px 20px 0px 20px;
+}
+
+.questions__inner.active {
+  background-color: #fff;
+}
+.questions__inner.active .questions__item-top {
+  color: #363636;
+}
+.questions__inner.active .questions__item-top::after {
+  opacity: 0;
+}
+
+.questions__item-top {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  position: relative;
+  padding-right: 40px;
+}
+.questions__item-top::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(1, 134, 53);
+}
+.questions__item-top::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(1, 134, 53);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.questions__item-bottom {
+  color: #363636;
+  display: none;
+  padding-bottom: 20px;
+}
+
+.questions__btn {
+  margin: 0 auto;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.questions__btn .global__border-box {
+  padding-left: 30px;
+}
+.questions__btn .global__border-box::before {
+  display: none;
 }
 
 @media (max-width: 1700px) {
@@ -929,14 +1010,14 @@ body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.51)), to(rgba(255, 255, 255, 0)));
     background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
-    background-color: #0039aa;
+    background-color: rgb(0, 57, 170);
     margin-left: -100%;
   }
   .services__left-box::before {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.51)), to(rgba(255, 255, 255, 0)));
     background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.51) 25%, rgba(255, 255, 255, 0) 100%);
-    background-color: #018635;
+    background-color: rgb(1, 134, 53);
     margin-left: 100%;
   }
   .services__left-box .services__inner-btn {
@@ -1112,6 +1193,9 @@ body {
     width: 207px;
     height: 106px;
   }
+  .questions__item {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 450px) {
   .screen__title {
@@ -1157,6 +1241,10 @@ body {
   }
   .screen__title span {
     font-size: 30px;
+  }
+  .questions__item-top {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 @media (max-width: 380px) {

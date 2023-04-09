@@ -394,6 +394,7 @@
 }
 
 .advantages__item {
+  @extend %Monst-SemiBold;
   clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
   padding: 10px;
   width: 370px;
@@ -402,15 +403,110 @@
   font-size: 20px;
   line-height: 24px;
 }
-.advantages__item-blue{
+
+.advantages__item-blue {
   background-color: $blue;
 }
-.advantages__item-green{
+
+.advantages__item-green {
   background-color: $green;
 }
-.advantages__item-white{
+
+.advantages__item-white {
   background-color: $text;
   color: $black;
 }
+
 // end section adv
+
+
+// start section questions
+.questions__item {
+
+  // border: 2px solid transparent;
+  // background: linear-gradient(170deg, #0039AA 0%, #018635 100%);
+
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right bottom, rgba(0, 57, 170, 1), rgba(1, 134, 53, 1));
+  border-image-slice: 1;
+  max-width: 1144px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.questions__item--active {
+  .questions__item-bottom {
+    display: block;
+  }
+}
+
+.questions__inner {
+  background-color: $background;
+  padding: 20px 20px 0px 20px;
+  // border-radius: 5px;
+
+}
+
+.questions__inner.active {
+  background-color: #fff;
+
+  .questions__item-top {
+    color: $black;
+
+    &::after {
+      opacity: 0;
+    }
+  }
+}
+
+.questions__item-top {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: $text;
+  position: relative;
+  padding-right: 40px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: $green;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: $green;
+    transform: rotate(90deg);
+  }
+}
+
+.questions__item-bottom {
+  color: $black;
+  display: none;
+  padding-bottom: 20px;
+}
+
+.questions__btn {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  .global__border-box {
+    padding-left: 30px;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+// end section questions
 @import 'media';
