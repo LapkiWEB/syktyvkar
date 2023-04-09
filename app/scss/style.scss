@@ -20,6 +20,11 @@ position: relative;
   animation-name: show_header;
   animation-duration: 1s;
   z-index: 100;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #0039aa, #018635) 47% 0%;
 }
 @keyframes show_header {
   0% {
@@ -200,6 +205,9 @@ position: relative;
   position: relative;
   overflow: hidden;
 }
+.services.section{
+  padding-bottom: 0;
+}
 .services__text {
   margin-bottom: 50px;
 }
@@ -332,6 +340,35 @@ position: relative;
   }
 }
 
-
 // end secion services
+
+
+// start section work
+.work__box{
+  margin-bottom: 50px;
+}
+.work__inner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed $blue;
+  align-items: flex-end;
+}
+.work__item-text{
+  max-width: 470px;
+  width: 100%;
+  padding-right: 20px;
+}
+.work__item-price{
+  width: 150px;
+  text-align: right;
+  // padding-left: 20px;
+}
+.work__btn{
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+// end section work
 @import 'media';
