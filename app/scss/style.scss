@@ -351,7 +351,10 @@
 
 // start section work
 .work__box {
+  margin: 0 auto;
   margin-bottom: 50px;
+  max-width: 1144px;
+  width: 100%;
 }
 
 .work__inner {
@@ -487,6 +490,7 @@
     height: 2px;
     background-color: $green;
     transform: rotate(90deg);
+
   }
 }
 
@@ -500,8 +504,10 @@
   margin: 0 auto;
   display: block;
   width: fit-content;
+
   .global__border-box {
     padding-left: 30px;
+
     &::before {
       display: none;
     }
@@ -509,4 +515,137 @@
 }
 
 // end section questions
+
+
+// start section slider
+.slider__inner {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider__item {
+  background-color: $text;
+  padding: 30px 110px;
+  background-color: $text;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+
+}
+
+.slider__box {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+.slider__text,
+.slider__name {
+  color: $black;
+  width: 100%;
+}
+
+.slider__text {
+  margin-bottom: 15px;
+}
+
+// end section slider
+
+// start section request
+.request {
+  background-image: url('../images/content/contacts-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.request__box {
+  padding: 83px 34px;
+  background: rgba(54, 54, 54, 0.8);
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.request__title {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.request__form-wrapper {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.request__wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 138px;
+  height: fit-content;
+  margin-bottom: 50px;
+
+}
+
+.request__inner {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  width: 100%;
+}
+
+.request__item {
+  @extend %Monst-SemiBold;
+  border: 1px solid $black;
+  padding: 15px 20px;
+  margin-bottom: 35px;
+  background-color: $text;
+  color: $black;
+  max-width: 454px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 5px;
+}
+
+.request__item-textarea {
+  padding: 15px 20px;
+  width: 100%;
+
+}
+
+.request__item-text {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+
+}
+
+.request__inner-btn {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.request__btn {
+  .global__border-box {
+    padding: 15px 30px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  button {
+    color: $text;
+    border: none;
+  }
+}
+
+// end section request
 @import 'media';

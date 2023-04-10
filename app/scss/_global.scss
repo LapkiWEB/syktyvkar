@@ -110,3 +110,61 @@ body {
       color: $text;
   }
 }
+
+
+
+
+
+
+
+.slick-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  button {
+    background-color: #929292;
+    border: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 20px 10px;
+    font-size: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}
+
+.slick-dots li[class="slick-active"] button {
+  background-color: #fff;
+
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -60px;
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -60px;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  .arrow__wrapper {
+    img {
+      width: 40px;
+      height: 100px;
+    }
+  }
+}

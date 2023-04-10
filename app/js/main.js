@@ -25,28 +25,35 @@ $(function () {
     }
   }));
 
-  // $('.questions__item-top').on('click', (function () {
-  //   if (!$('.questions__item-bottom').hasClass('active')) {
-  //     $('.questions__item-bottom').addClass('active');
-  //     $('.questions__item-top').addClass('active');
-  //     $('.questions__inner').addClass('active');
-  //   } else {
-  //     $('.questions__item-bottom').removeClass('active');
-  //     $('.questions__item-top').removeClass('active');
-  //     $('.questions__inner').removeClass('active');
-  //   }
-  // }));
+  $('.questions__item').on('click', (function () {
 
-   $('.questions__item').on('click', (function () {
-
-     $(this).find('.questions__inner').addClass('active');
-     $(this).siblings().find('.questions__inner').removeClass('active');
+    $(this).find('.questions__inner').addClass('active');
+    $(this).siblings().find('.questions__inner').removeClass('active');
 
 
-     $(this).find('.questions__item-bottom').show(500);
-     $(this).siblings().find('.questions__item-bottom').hide(500);
+    $(this).find('.questions__item-bottom').show(500);
+    $(this).siblings().find('.questions__item-bottom').hide(500);
 
-   }));
+  }));
+
+  $('.slider__wrapper').slick({
+    prevArrow: document.querySelector('.slick-prev'),
+    nextArrow: document.querySelector('.slick-next'),
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 10000,
+
+    responsive: [{
+      breakpoint: 601,
+      settings: {
+        dots: true,
+        dotsClass: 'slick-dots',
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }]
+  });
 
 
 });
