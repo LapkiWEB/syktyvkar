@@ -529,6 +529,15 @@
   .footer__item-contacts{
     order: -1;
   }
+  .error__title{
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 30px;
+  }
+  .error__text{
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media(max-width: 700px) {
@@ -611,6 +620,16 @@
       right: 20px;
     }
   }
+    .error__title {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+
+    .error__text {
+      font-size: 18px;
+      line-height: 20px;
+    }
 }
 
 @media(max-width: 450px) {

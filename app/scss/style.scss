@@ -743,4 +743,35 @@
 }
 
 // end section footer
+
+
+// start str error
+.error{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 40vh;
+}
+
+.error__title{
+  font-size: 120px;
+  line-height: 140px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.error__text{
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.error__btn{
+  .global__border-box{
+    padding: 15px 30px;
+    &::before{
+      display: none;
+    }
+  }
+}
+// end str error
 @import 'media';
