@@ -1231,8 +1231,8 @@ body {
 }
 
 .error__title {
-  font-size: 120px;
-  line-height: 140px;
+  font-size: 60px;
+  line-height: 70px;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
