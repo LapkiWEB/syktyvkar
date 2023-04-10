@@ -529,10 +529,6 @@
   .footer__item-contacts{
     order: -1;
   }
-  .policy{
-    font-size: 12px;
-    line-height: 14px;
-  }
 }
 
 @media(max-width: 700px) {
@@ -605,6 +601,15 @@
 
   .questions__item {
     margin-bottom: 20px;
+  }
+  .modal{
+    .request__box{
+      padding-top: 70px;
+    }
+    .close__btn{
+      top: 20px;
+      right: 20px;
+    }
   }
 }
 

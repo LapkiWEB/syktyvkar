@@ -171,9 +171,9 @@
                       от 1800 руб
                     </div>
                     <div class="services__inner-btn">
-                      <a class="services__btn-popup global__btn global__btn-white" href="#">
+                      <div data-modal class="services__btn-popup global__btn global__btn-white">
                         Заказать эвакуатор
-                      </a>
+                      </div>
                       <a class="global__btn-phone services__btn-phone" href="#">
                         <div class="global__border-box">
                           Позвони нам!
@@ -202,9 +202,9 @@
                       от 1800 руб
                     </div>
                     <div class="services__inner-btn">
-                      <a class="services__btn-popup global__btn global__btn-white" href="#">
+                      <div data-modal class="services__btn-popup global__btn global__btn-white">
                         Заказать эвакуатор
-                      </a>
+                      </div>
                       <a class="global__btn-phone services__btn-phone" href="#">
                         <div class="global__border-box">
                           Позвони нам!
@@ -241,9 +241,9 @@
                       от 1800 руб
                     </div>
                     <div class="services__inner-btn">
-                      <a class="services__btn-popup global__btn global__btn-white" href="#">
+                      <div data-modal class="services__btn-popup global__btn global__btn-white">
                         Заказать эвакуатор
-                      </a>
+                      </div>
                       <a class="global__btn-phone services__btn-phone" href="#">
                         <div class="global__border-box">
                           Позвони нам!
@@ -452,11 +452,11 @@
             </div>
           </div>
 
-          <a class="global__btn-phone questions__btn" href="#">
+          <div data-modal class="global__btn-phone questions__btn">
             <div class="global__border-box">
               Задать вопрос
             </div>
-          </a>
+          </div>
 
         </div>
       </section>
@@ -624,9 +624,9 @@
       <section class="seo section">
         <div class="container">
           <p class="seo__text text">
-            Вызвать эвакуатор в Сыктывкаре» - Основная услуга нашей компании. Если на дороге случилась беда с Вашим
+            Вызвать «Эвакуатор в Сыктывкаре» - Основная услуга нашей компании. Если на дороге случилась беда с Вашим
             автомобилем -
-            воспользуйтесь услугой на сайте: «Эвакуатор Авто Недорого» Или позвоните нам по телефону +7 912 863 53 33.
+            воспользуйтесь услугой на сайте: «Эвакуатор Авто Недорого» или позвоните нам по телефону +7 912 863 53 33.
             Подача
             эвакуатора за 20-30 минут. Профессиональные водители, которые прибудут в любую точку Сыктывкара, чтобы
             эвакуировать
@@ -729,11 +729,11 @@
               +7 912 863 53 33
             </a>
 
-            <a class="global__btn-phone footer__btn" href="#">
+            <div data-modal class="global__btn-phone footer__btn">
               <div class="global__border-box">
                 Оставить заявку
               </div>
-            </a>
+            </div>
 
             <a class="footer__btn global__btn global__btn-white" href="tel:+79128635333">
               konstantyn.kobzev@yandex.ru
@@ -749,6 +749,59 @@
         </a>
       </div>
     </footer>
+
+
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="container">
+          <div class="modal__wrapper">
+
+
+            <ul data-close class="close__btn">
+              <li class="close__line close__line1"></li>
+              <li class="close__line close__line2"></li>
+            </ul>
+
+            <div class="request__box">
+              <h2 class="request__title title">
+                ОСТАВЬТЕ ЗАЯВКУ
+              </h2>
+
+
+
+              <form class="request__form">
+                <div class="request__form-wrapper">
+                  <div class="request__wrapper">
+                    <div class="request__inner">
+                      <input class="request__item" type="text" name="name" placeholder="Ваше Имя..." required>
+                      <input class="request__item" type="text" name="phone" placeholder="Ваш телефон или почта..."
+                        required>
+                    </div>
+                    <div class="request__item request__item-textarea">
+                      <textarea class="request__item-text" name="text" placeholder="Ваше Сообщение..."></textarea>
+                    </div>
+                  </div>
+                  <div class="request__inner-btn">
+                    <div class="global__btn-phone request__btn">
+                      <button class="global__border-box">
+                        Заказать услугу
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
   </div>
 
   <script src="js/main.min.js"></script>

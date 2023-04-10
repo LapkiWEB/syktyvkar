@@ -277,7 +277,10 @@
 .services__right-inner {
   padding: 50px 0 50px 183px;
 }
-
+.services__btn-popup{
+  display: inline;
+  cursor: pointer;
+}
 .services__item--title {
   @extend %Monst-Bold;
   color: $text;
@@ -632,8 +635,10 @@
 }
 
 .request__btn {
+
   .global__border-box {
     padding: 15px 30px;
+    cursor: pointer;
 
     &::before {
       display: none;
@@ -662,6 +667,7 @@
   width: 100%;
   // padding: 30px;
   margin-bottom: 30px;
+
 }
 
 .footer__item-title {
@@ -678,6 +684,13 @@
   line-height: 17px;
   margin-bottom: 15px;
 }
+
+.footer__menu-list--link {
+  &:hover {
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+}
+
 
 .footer__social-list {
   width: 30px;
@@ -701,27 +714,33 @@
   width: 360px;
   flex-wrap: wrap;
   justify-content: flex-end;
-  a{
-    margin-bottom: 15px;
-  }
 }
 
 .footer__btn {
   display: block;
   height: fit-content;
+  margin-bottom: 15px;
+  cursor: pointer;
 
   .global__border-box {
     padding: 15px 30px;
+
     &::before {
       display: none;
     }
   }
 
 }
-.policy{
+
+.policy {
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 14px;
+
+  &:hover {
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
 }
+
 // end section footer
 @import 'media';

@@ -197,7 +197,7 @@ body {
   position: relative;
   font-size: 18px;
   line-height: 21px;
-  background-color: #2f2f2f;
+  background-color: rgb(47, 47, 47);
 }
 
 ::-webkit-scrollbar {
@@ -205,15 +205,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #363636;
+  background-color: rgb(54, 54, 54);
   position: relative;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(1, 134, 53);
+  background: linear-gradient(170deg, rgb(0, 57, 170) 0%, rgb(1, 134, 53) 100%);
   border-radius: 5px;
-  border: 1px solid #363636;
+  border: 1px solid rgb(54, 54, 54);
 }
 
 .wrapper {
@@ -280,7 +280,7 @@ body {
 }
 
 .global__border-box {
-  background-color: #2f2f2f;
+  background-color: rgb(47, 47, 47);
   padding: 15px 30px 15px 60px;
   border-radius: 5px;
   position: relative;
@@ -309,7 +309,7 @@ body {
 .global__btn-white {
   background-color: #FFFFFF;
   border: 1px solid rgb(0, 57, 170);
-  color: #363636;
+  color: rgb(54, 54, 54);
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -317,7 +317,7 @@ body {
 .global__btn-white:hover {
   -webkit-box-shadow: -5px -5px 10px #0039AA, 5px 5px 10px #018635;
           box-shadow: -5px -5px 10px #0039AA, 5px 5px 10px #018635;
-  background-color: #2f2f2f;
+  background-color: rgb(47, 47, 47);
   color: #FFFFFF;
 }
 
@@ -374,6 +374,79 @@ body {
 .slick-arrow .arrow__wrapper img {
   width: 40px;
   height: 100px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -o-linear-gradient(280deg, rgb(0, 57, 170) 0%, rgb(1, 134, 53) 100%);
+  background: linear-gradient(170deg, rgb(0, 57, 170) 0%, rgb(1, 134, 53) 100%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: none;
+}
+
+.modal__inner {
+  width: 100%;
+}
+
+.modal__wrapper {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.modal__title {
+  position: relative;
+}
+
+.close__btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.close__line {
+  width: 30px;
+  background-color: #FFFFFF;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.close__line1 {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 6px;
+}
+
+.close__line2 {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -3px;
+}
+
+.show {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide {
+  display: none;
 }
 
 @font-face {
@@ -518,7 +591,7 @@ body {
           transform: rotate(45deg);
   position: relative;
   top: 8px;
-  background-color: #363636;
+  background-color: rgb(54, 54, 54);
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -529,7 +602,7 @@ body {
           transform: rotate(-45deg);
   position: relative;
   top: -1px;
-  background-color: #363636;
+  background-color: rgb(54, 54, 54);
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -540,7 +613,7 @@ body {
 
 .row {
   width: 30px;
-  background-color: #363636;
+  background-color: rgb(54, 54, 54);
   height: 3px;
   border-radius: 5px;
   display: block;
@@ -700,6 +773,11 @@ body {
   padding: 50px 0 50px 183px;
 }
 
+.services__btn-popup {
+  display: inline;
+  cursor: pointer;
+}
+
 .services__item--title {
   color: #FFFFFF;
   font-size: 24px;
@@ -753,7 +831,7 @@ body {
 
 .services__right-box--white .services__item--title,
 .services__right-box--white .services__item-price {
-  color: #363636;
+  color: rgb(54, 54, 54);
 }
 
 .work__box {
@@ -830,7 +908,7 @@ body {
 
 .advantages__item-white {
   background-color: #FFFFFF;
-  color: #363636;
+  color: rgb(54, 54, 54);
 }
 
 .questions__item {
@@ -850,7 +928,7 @@ body {
 }
 
 .questions__inner {
-  background-color: #2f2f2f;
+  background-color: rgb(47, 47, 47);
   padding: 20px 20px 0px 20px;
 }
 
@@ -858,7 +936,7 @@ body {
   background-color: #fff;
 }
 .questions__inner.active .questions__item-top {
-  color: #363636;
+  color: rgb(54, 54, 54);
 }
 .questions__inner.active .questions__item-top::after {
   opacity: 0;
@@ -895,7 +973,7 @@ body {
 }
 
 .questions__item-bottom {
-  color: #363636;
+  color: rgb(54, 54, 54);
   display: none;
   padding-bottom: 20px;
 }
@@ -942,7 +1020,7 @@ body {
 
 .slider__text,
 .slider__name {
-  color: #363636;
+  color: rgb(54, 54, 54);
   width: 100%;
 }
 
@@ -1003,11 +1081,11 @@ body {
 }
 
 .request__item {
-  border: 1px solid #363636;
+  border: 1px solid rgb(54, 54, 54);
   padding: 15px 20px;
   margin-bottom: 35px;
   background-color: #FFFFFF;
-  color: #363636;
+  color: rgb(54, 54, 54);
   max-width: 454px;
   width: 100%;
   font-size: 16px;
@@ -1037,6 +1115,7 @@ body {
 
 .request__btn .global__border-box {
   padding: 15px 30px;
+  cursor: pointer;
 }
 .request__btn .global__border-box::before {
   display: none;
@@ -1077,6 +1156,10 @@ body {
   margin-bottom: 15px;
 }
 
+.footer__menu-list--link:hover {
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
 .footer__social-list {
   width: 30px;
   height: 30px;
@@ -1109,15 +1192,14 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.footer__item-contacts a {
-  margin-bottom: 15px;
-}
 
 .footer__btn {
   display: block;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 .footer__btn .global__border-box {
   padding: 15px 30px;
@@ -1128,8 +1210,11 @@ body {
 
 .policy {
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.policy:hover {
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 @media (max-width: 1700px) {
@@ -1565,7 +1650,7 @@ body {
   }
   .screen__title,
   .screen__text {
-    color: #363636;
+    color: rgb(54, 54, 54);
     text-align: center;
   }
   .screen__btn {
@@ -1627,10 +1712,6 @@ body {
         -ms-flex-order: -1;
             order: -1;
   }
-  .policy {
-    font-size: 12px;
-    line-height: 14px;
-  }
 }
 @media (max-width: 700px) {
   .services__img {
@@ -1690,6 +1771,13 @@ body {
   }
   .questions__item {
     margin-bottom: 20px;
+  }
+  .modal .request__box {
+    padding-top: 70px;
+  }
+  .modal .close__btn {
+    top: 20px;
+    right: 20px;
   }
 }
 @media (max-width: 450px) {
