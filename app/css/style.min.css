@@ -102,7 +102,7 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
-.request__item, .advantages__item, .global__border-box, .global__btn-phone, .global__btn {
+.page-policy__subtitle, .request__item, .advantages__item, .global__border-box, .global__btn-phone, .global__btn {
   font-family: "Montserrat-SemiBold", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1248,6 +1248,16 @@ body {
 }
 .error__btn .global__border-box::before {
   display: none;
+}
+
+.page-policy__subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.page-policy__wrapper {
+  margin-bottom: 15px;
 }
 
 @media (max-width: 1700px) {

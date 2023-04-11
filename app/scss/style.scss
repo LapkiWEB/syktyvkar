@@ -774,4 +774,18 @@
   }
 }
 // end str error
+
+// start str policy
+.page-policy__subtitle{
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+    @extend %Monst-SemiBold;
+}
+.page-policy__wrapper{
+  margin-bottom: 15px;
+}
+
+
+// end str policy
 @import 'media';
