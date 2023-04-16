@@ -42,7 +42,7 @@
     line-height: 95px;
 
     span {
-      font-size: 70px;
+      font-size: 55px;
     }
   }
 
@@ -130,7 +130,7 @@
     margin-bottom: 40px;
 
     span {
-      font-size: 60px;
+      font-size: 50px;
     }
   }
 
@@ -146,25 +146,31 @@
   .services__number-icon {
     display: none;
   }
-  .footer__inner{
+
+  .footer__inner {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .footer__item{
+
+  .footer__item {
     max-width: 360px;
     padding: 0 15px;
     width: 100%;
   }
-  .footer__item-nav{
+
+  .footer__item-nav {
     order: -1;
   }
-  .footer__item-social{
+
+  .footer__item-social {
     order: -1;
   }
-  .footer__item-contacts{
+
+  .footer__item-contacts {
     justify-content: flex-start;
   }
-  .policy{
+
+  .policy {
     // display: block;
     // margin: 0 auto;
     width: 100%;
@@ -203,10 +209,12 @@
       left: 15px;
     }
   }
+
   .footer__btn,
   .request__btn {
     .global__border-box {
       padding: 10px 30px;
+
       &::before {
         display: none;
       }
@@ -246,10 +254,10 @@
   .screen__title {
     padding-top: 122px;
     font-size: 64px;
-    line-height: 70px;
+    line-height: 64px;
 
     span {
-      font-size: 45px;
+      font-size: 40px;
     }
   }
 
@@ -283,14 +291,17 @@
     font-size: 16px;
     line-height: 20px;
   }
-  .request__box{
+
+  .request__box {
     padding: 50px;
   }
-  .request__title{
+
+  .request__title {
     font-size: 24px;
     line-height: 30px;
   }
-  .request__wrapper{
+
+  .request__wrapper {
     margin-bottom: 0;
   }
 }
@@ -318,7 +329,7 @@
     line-height: 50px;
 
     span {
-      font-size: 38px;
+      font-size: 34px;
     }
   }
 
@@ -344,12 +355,13 @@
   .mob__social {
     width: 360px;
   }
+
   .footer__item {
     max-width: 300px;
     padding: 0 15px;
     width: 100%;
   }
- 
+
 }
 
 @media(max-width: 850px) {
@@ -442,14 +454,17 @@
       left: 0;
     }
   }
-  .request__box{
+
+  .request__box {
     padding: 30px 20px 30px 20px;
   }
-  .request__wrapper{
+
+  .request__wrapper {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .request__inner{
+
+  .request__inner {
     justify-content: center;
     margin-right: 0;
   }
@@ -472,13 +487,17 @@
   .screen__title,
   .screen__text {
     color: $black;
-    text-align: center;
+    // text-align: center;
+  }
+
+  .screen__title {
+    padding-top: 100px;
   }
 
   .screen__btn {
-    margin: 0 auto;
-    display: block;
-    width: fit-content;
+    // margin: 0 auto;
+    // display: block;
+    // width: fit-content;
   }
 
   .screen__body {
@@ -520,21 +539,26 @@
   .slider__box {
     overflow-y: auto;
   }
-  .footer__inner{
+
+  .footer__inner {
     justify-content: flex-start;
   }
-  .footer__item{
+
+  .footer__item {
     padding: 0;
   }
-  .footer__item-contacts{
+
+  .footer__item-contacts {
     order: -1;
   }
-  .error__title{
+
+  .error__title {
     font-size: 60px;
     line-height: 80px;
     margin-bottom: 30px;
   }
-  .error__text{
+
+  .error__text {
     font-size: 20px;
     line-height: 24px;
   }
@@ -611,25 +635,28 @@
   .questions__item {
     margin-bottom: 20px;
   }
-  .modal{
-    .request__box{
+
+  .modal {
+    .request__box {
       padding-top: 70px;
     }
-    .close__btn{
+
+    .close__btn {
       top: 20px;
       right: 20px;
     }
   }
-    .error__title {
-      font-size: 30px;
-      line-height: 40px;
-      margin-bottom: 30px;
-    }
 
-    .error__text {
-      font-size: 18px;
-      line-height: 20px;
-    }
+  .error__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .error__text {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 @media(max-width: 450px) {
@@ -639,10 +666,15 @@
     margin-bottom: 20px;
 
     span {
-      font-size: 35px;
+      font-size: 26px;
     }
   }
-
+  .screen__text{
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Montserrat-Bold',
+    sans-serif;
+  }
   .services__wrapper {
     .container {
       padding: 0;
@@ -676,7 +708,8 @@
     clip-path: polygon(00% 0%, 100% 0%, 100% 100%, 0% 100%);
 
   }
-  .slider__box{
+
+  .slider__box {
     padding-right: 15px;
     height: 150px;
   }
@@ -697,9 +730,9 @@
     font-size: 40px;
     line-height: 43px;
 
-    span {
-      font-size: 30px;
-    }
+    // span {
+    //   font-size: 26px;
+    // }
 
 
 

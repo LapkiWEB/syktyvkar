@@ -164,12 +164,13 @@
   padding-top: 226px;
   @extend %Monst-Bold;
   font-size: 110px;
-  line-height: 110px;
-  margin-bottom: 68px;
+  line-height: 100px;
+  margin-bottom: 60px;
 
   span {
-    @extend %Monst-Medium;
-    font-size: 80px;
+    // @extend %Monst-Medium;
+    font-size: 60px;
+    display: block;
   }
 }
 
@@ -439,6 +440,7 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .questions__item--active {
